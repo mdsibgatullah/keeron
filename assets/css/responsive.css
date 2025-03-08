@@ -1,0 +1,74 @@
+@media screen and (max-width: 992px){
+    /* add */
+    .add_text{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .add .text{
+        max-width: 100%;
+    }
+    .hero_data{
+        grid-template-columns: 1fr;
+    }
+    .demo_video{
+        order: 1;
+    }
+    .hero_text{
+        order: 2;
+        text-align: center;
+    }
+    .hero .reviews ul{
+        justify-content: center;
+    }
+    .hero .reviews p{
+        margin-bottom: 10px;
+    }
+    .teacher{
+        display: block;
+    }
+    .courses ul{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 768px){
+    .course_dtl {
+        grid-template-columns: 1fr;
+    }
+    .mentor_data {
+        display: block;
+        text-align: center;
+    }
+    .mentor_data .line7{
+        text-align: justify;
+    }
+    .mentor_img{
+        margin: 0 auto;
+    }
+    .courses ul{
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 576px){
+    .demo_video iframe{
+        width: 400px;
+    }
+    .course_curriculum ul li{
+        display: block;
+    }
+    .course_curriculum .modules{
+        width: 100%;
+        text-align: center;
+    }
+    .course_curriculum .modules h1{
+        font-size: 40px;
+    }
+    .courses ul{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 425px){
+    .demo_video iframe{
+        width: 320px;
+    }
+}
