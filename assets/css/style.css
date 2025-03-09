@@ -86,7 +86,7 @@
     flex-wrap: wrap;
 }
 .class_details li{
-    background-color: var(--secondary-color);
+    background-color: #086F83;
     width: 290px;
     height: 200px;
     color: var(--body-color);
@@ -96,6 +96,15 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.class_details li:nth-child(2){
+    background-color: #0A2849;
+}
+.class_details li:nth-child(3){
+    background-color: #234E52;
+}
+.class_details li:nth-child(4){
+    background-color: #1A202C;
 }
 section{
     padding: 50px 0;
@@ -142,6 +151,8 @@ section{
 }
 .section_header p{
     font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
 }
 .course_curriculum ul{
     margin-bottom: 30px;
@@ -282,4 +293,62 @@ section{
     align-items: center;
     justify-content: space-between;
 }
+.slider {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
 
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider ul li {
+    min-width: 48%;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.slider ul li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+button.left {
+    left: 5px;
+}
+
+button.right {
+    right: 5px;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
