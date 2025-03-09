@@ -9,6 +9,8 @@
     }
     .hero_data{
         grid-template-columns: 1fr;
+        height: 100%;
+        padding: 40px 0;
     }
     .demo_video{
         order: 1;
@@ -31,8 +33,13 @@
         gap: 20px;
     }
     .class_details li{
-        width: 220px;
-        height: 140px;
+        padding: 40px 0;
+    }
+    .class_details li h3{
+        font-size: 30px;
+    }
+    .hero .reviews{
+        justify-content: center;
     }
 }
 @media screen and (max-width: 768px){
@@ -52,19 +59,23 @@
     .courses ul{
         gap: 20px;
     }
-    .slider ul li {
+    /* .slider ul li {
         min-width: 97%;
         margin: 0;
         border: 1px solid gray;
         border-radius: 10px;
         background-color: #fff;
+    } */
+    .class_details{
+        grid-template-columns: repeat(2, 1fr);
     }
-}
-@media screen and (max-width: 576px){
-    .demo_video iframe{
-        width: 400px;
+    .class_details li{
+        padding: 20px 0;
     }
-    .course_curriculum ul li{
+    .class_details li h3{
+        font-size: 30px;
+    }
+    .course_curriculum ul .module_list{
         display: block;
     }
     .course_curriculum .modules{
@@ -74,8 +85,25 @@
     .course_curriculum .modules h1{
         font-size: 40px;
     }
+    .course_video video{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 576px){
+    .demo_video iframe{
+        width: 400px;
+    }
     .courses ul{
         grid-template-columns: 1fr;
+    }
+    .faq_data ul summary h6 {
+        font-size: 14px;
+    }
+    .faq_data ul p {
+        font-size: 14px;
+    }
+    .hero_video video{
+        max-width: 100%;
     }
 }
 @media screen and (max-width: 425px){
