@@ -52,6 +52,13 @@
     .courses ul{
         gap: 20px;
     }
+    .slider ul li {
+        min-width: 97%;
+        margin: 0;
+        border: 1px solid gray;
+        border-radius: 10px;
+        background-color: #fff;
+    }
 }
 @media screen and (max-width: 576px){
     .demo_video iframe{
