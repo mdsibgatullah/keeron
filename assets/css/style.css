@@ -37,7 +37,13 @@
 }
 
 /* hero */
+.hero{
+    background-image: url('/assets/images/hero_bg.svg');
+    background-size: cover;
+    background-position: center;
+}
 .hero_data{
+    color: var(--body-color);
     padding: 30px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -107,7 +113,7 @@
     background-color: #1A202C;
 }
 section{
-    padding: 50px 0;
+    padding: 100px 0;
 }
 .course_dtl{
     display: grid;
@@ -182,7 +188,9 @@ section{
     gap: 30px;
 }
 .mentor_details{
-    background-color: var(--secondary-color);
+    background-image: url('/assets/images/hero_bg.svg');
+    background-size: cover;
+    background-position: center;
     color: var(--body-color);
 }
 .mentor_details h3{
