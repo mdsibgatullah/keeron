@@ -222,7 +222,7 @@ section{
     cursor: pointer;
     position: relative;
 }
-.faq_help p::after {
+.faq_help p.active::after {
     position: absolute;
     width: 100%;
     height: 3px;

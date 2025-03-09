@@ -376,13 +376,45 @@
                 </div>
                 <div class="faq_data">
                     <div class="faq_help">
-                        <p>Ganarel</p>
-                        <p>Payment</p>
+                        <p class="ganarel_btn active" onclick="ganarelf()">Ganarel</p>
+                        <p class="payment_btn" onclick="paymentf()">Payment</p>
                     </div>
-                    <ul>
+                    <ul id="ganarel">
+                        <li>
+                            <details>
+                                <summary><h6>এই কোর্সটি কার জন্য?g</h6></summary>
+                                <p>এই কোর্সটি তাদের জন্য, যারা পেশাগত ও ব্যক্তিগত উদ্দেশ্যে ইংরেজি উন্নত করতে আগ্রহী।</p>
+                            </details>
+                        </li>
                         <li>
                             <details>
                                 <summary><h6>এই কোর্সটি কার জন্য?</h6></summary>
+                                <p>এই কোর্সটি তাদের জন্য, যারা পেশাগত ও ব্যক্তিগত উদ্দেশ্যে ইংরেজি উন্নত করতে আগ্রহী।</p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary><h6>এই কোর্সটি কার জন্য?</h6></summary>
+                                <p>এই কোর্সটি তাদের জন্য, যারা পেশাগত ও ব্যক্তিগত উদ্দেশ্যে ইংরেজি উন্নত করতে আগ্রহী।</p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary><h6>এই কোর্সটি কার জন্য?</h6></summary>
+                                <p>এই কোর্সটি তাদের জন্য, যারা পেশাগত ও ব্যক্তিগত উদ্দেশ্যে ইংরেজি উন্নত করতে আগ্রহী।</p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary><h6>এই কোর্সটি কার জন্য?</h6></summary>
+                                <p>এই কোর্সটি তাদের জন্য, যারা পেশাগত ও ব্যক্তিগত উদ্দেশ্যে ইংরেজি উন্নত করতে আগ্রহী।</p>
+                            </details>
+                        </li>
+                    </ul>
+                    <ul id="payment">
+                        <li>
+                            <details>
+                                <summary><h6>এই কোর্সটি কার জন্য? p</h6></summary>
                                 <p>এই কোর্সটি তাদের জন্য, যারা পেশাগত ও ব্যক্তিগত উদ্দেশ্যে ইংরেজি উন্নত করতে আগ্রহী।</p>
                             </details>
                         </li>
@@ -482,63 +514,84 @@
 
 
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const slider = document.querySelector(".slider ul");
-    const leftButton = document.querySelector(".left");
-    const rightButton = document.querySelector(".right");
-    let index = 0;
-    
-    const items = document.querySelectorAll(".slider ul li");
-    const totalSlides = items.length / 2;
-    const firstClone = items[0].cloneNode(true);
-    const lastClone = items[items.length - 1].cloneNode(true);
 
-    slider.appendChild(firstClone);
-    slider.insertBefore(lastClone, slider.firstChild);
+        const ganarel = document.getElementById("ganarel");
+        const payment = document.getElementById("payment");
+        const payment_btn = document.querySelector(".payment_btn")
+        const ganarel_btn = document.querySelector(".ganarel_btn")
+        payment.style.display = "none";
+        ganarel.style.display = "block";
 
-    index = 1;
-    slider.style.transform = `translateX(-${index * 100}%)`;
-
-    function updateSlider() {
-        slider.style.transition = "transform 0.5s ease-in-out";
-        slider.style.transform = `translateX(-${index * 100}%)`;
-    }
-
-    function nextSlide() {
-        if (index >= totalSlides) {
-            slider.style.transition = "none";
-            index = 0;
-            slider.style.transform = `translateX(-${index * 100}%)`;
-            setTimeout(() => {
-                index++;
-                updateSlider();
-            }, 50);
-        } else {
-            index++;
-            updateSlider();
+        function ganarelf() {
+            ganarel.style.display = "block";
+            payment.style.display = "none";
+            payment_btn.classList.remove('active');
+            ganarel_btn.classList.add('active');
         }
-    }
-
-    function prevSlide() {
-        if (index <= 0) {
-            slider.style.transition = "none";
-            index = totalSlides; 
-            slider.style.transform = `translateX(-${index * 100}%)`;
-            setTimeout(() => {
-                index--;
-                updateSlider();
-            }, 50);
-        } else {
-            index--;
-            updateSlider();
+        function paymentf() {
+            ganarel.style.display = "none";
+            payment.style.display = "block";
+            payment_btn.classList.add('active');
+            ganarel_btn.classList.remove('active');
         }
-    }
 
-    rightButton.addEventListener("click", nextSlide);
-    leftButton.addEventListener("click", prevSlide);
+            document.addEventListener("DOMContentLoaded", function () {
+            const slider = document.querySelector(".slider ul");
+            const leftButton = document.querySelector(".left");
+            const rightButton = document.querySelector(".right");
+            let index = 0;
+            
+            const items = document.querySelectorAll(".slider ul li");
+            const totalSlides = items.length / 2;
+            const firstClone = items[0].cloneNode(true);
+            const lastClone = items[items.length - 1].cloneNode(true);
 
-    setInterval(nextSlide, 2000);
-});
+            slider.appendChild(firstClone);
+            slider.insertBefore(lastClone, slider.firstChild);
+
+            index = 1;
+            slider.style.transform = `translateX(-${index * 100}%)`;
+
+            function updateSlider() {
+                slider.style.transition = "transform 0.5s ease-in-out";
+                slider.style.transform = `translateX(-${index * 100}%)`;
+            }
+
+            function nextSlide() {
+                if (index >= totalSlides) {
+                    slider.style.transition = "none";
+                    index = 0;
+                    slider.style.transform = `translateX(-${index * 100}%)`;
+                    setTimeout(() => {
+                        index++;
+                        updateSlider();
+                    }, 50);
+                } else {
+                    index++;
+                    updateSlider();
+                }
+            }
+
+            function prevSlide() {
+                if (index <= 0) {
+                    slider.style.transition = "none";
+                    index = totalSlides; 
+                    slider.style.transform = `translateX(-${index * 100}%)`;
+                    setTimeout(() => {
+                        index--;
+                        updateSlider();
+                    }, 50);
+                } else {
+                    index--;
+                    updateSlider();
+                }
+            }
+
+            rightButton.addEventListener("click", nextSlide);
+            leftButton.addEventListener("click", prevSlide);
+
+            setInterval(nextSlide, 2000);
+        });
 
     </script>
 </body>
