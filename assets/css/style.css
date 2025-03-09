@@ -328,7 +328,7 @@ section{
     border-radius: 50%;
 }
 
-button {
+.slider button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -341,14 +341,14 @@ button {
     border-radius: 50%;
 }
 
-button.left {
+.slider button.left {
     left: 5px;
 }
 
-button.right {
+.slider button.right {
     right: 5px;
 }
 
-button:hover {
+.slider button:hover {
     background: rgba(0, 0, 0, 0.8);
 }

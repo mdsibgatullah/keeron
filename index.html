@@ -306,7 +306,7 @@
                                     </div>
                                 </div>
                                 <p class="line5">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    dolor sit amet consectetur adipisicing elit. 
                                 </p>
                             </li>
                             <li>
@@ -322,7 +322,7 @@
                                     </div>
                                 </div>
                                 <p class="line5">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    dolor sit amet consectetur adipisicing elit. Enim vel nam dolore explicabo cupiditate neque quaerat non ea tempore repellendus est dolor ipsum corporis cumque dolorem, excepturi quidem velit aliquam. dolor sit amet consectetur adipisicing elit.
                                 </p>
                             </li>
                             <li>
@@ -338,7 +338,7 @@
                                     </div>
                                 </div>
                                 <p class="line5">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    dolor sit amet consectetur adipisicing elit. Enim vel nam
                                 </p>
                             </li>
                             <li>
@@ -354,7 +354,7 @@
                                     </div>
                                 </div>
                                 <p class="line5">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    dolor sit amet consectetur adipisicing elit. Enim vel nam dolore explicabo cupiditate neque quaerat non ea tempore repellendus est dolor ipsum corporis cumque dolorem, excepturi quidem velit aliquam. dolor sit amet consectetur adipisicing elit.
                                 </p>
                             </li>
                         </ul>
@@ -488,16 +488,14 @@
     const rightButton = document.querySelector(".right");
     let index = 0;
     
-    // ✅ প্রথম এবং শেষ এলিমেন্ট ক্লোন করে অ্যাড করা হলো
     const items = document.querySelectorAll(".slider ul li");
-    const totalSlides = items.length / 2; // 2 per slide
+    const totalSlides = items.length / 2;
     const firstClone = items[0].cloneNode(true);
     const lastClone = items[items.length - 1].cloneNode(true);
 
     slider.appendChild(firstClone);
     slider.insertBefore(lastClone, slider.firstChild);
 
-    // ✅ স্টার্টিং পজিশন সেট করা হলো
     index = 1;
     slider.style.transform = `translateX(-${index * 100}%)`;
 
@@ -509,7 +507,7 @@
     function nextSlide() {
         if (index >= totalSlides) {
             slider.style.transition = "none";
-            index = 0; // ইনস্ট্যান্টলি প্রথম পজিশনে নিয়ে আসা
+            index = 0;
             slider.style.transform = `translateX(-${index * 100}%)`;
             setTimeout(() => {
                 index++;
@@ -524,7 +522,7 @@
     function prevSlide() {
         if (index <= 0) {
             slider.style.transition = "none";
-            index = totalSlides; // ইনস্ট্যান্টলি লাস্ট পজিশনে নিয়ে আসা
+            index = totalSlides; 
             slider.style.transform = `translateX(-${index * 100}%)`;
             setTimeout(() => {
                 index--;
@@ -539,7 +537,6 @@
     rightButton.addEventListener("click", nextSlide);
     leftButton.addEventListener("click", prevSlide);
 
-    // ✅ Auto Slide every 2 seconds
     setInterval(nextSlide, 2000);
 });
 
