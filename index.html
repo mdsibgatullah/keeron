@@ -17,7 +17,7 @@
             <div class="container">
                 <div class="add_text flex">
                     <h5 class="line2 text">৫০% off এর স্পেশাল ছাড় চলছে{অফারটি সীমিত সময়ের জন্য}</h5>
-                    <ul class="flex">
+                    <ul class="flex timer">
                         <li>
                             <h5>01</h5>
                             <p>Days</p>
@@ -38,8 +38,8 @@
                             <p>Seconds</p>
                         </li>
                     </ul>
-                    <button class="btn">Avail Now</button>
-                    <button>X</button>
+                    <button class="enroll_Now" onclick="showPopup()">Enroll Now</button>
+                    <button onclick="closeAdd()">Close</button>
                 </div>
             </div>
         </div>
@@ -160,6 +160,8 @@
                                 <li><p>সর্বোপরি NAT-TEST/JLPT এর জন্য সম্পূর্ণ প্রস্তুতি প্রদান করা হবে।</p></li>
                                 <li><p>ক্লাসের বাইরে অনলাইন গ্রুপের মাধ্যমে সার্বক্ষণিক সমস্যার সমাধান দেয়া হবে।</p></li>
                                 <li><p>বই এবং অন্যান্য কোর্স ম্যাটেরিয়ালস সম্পূর্ণ ফ্রী।</p></li>
+                                <br>
+                                <button class="enroll_Now" onclick="showPopup()">Enroll Now</button>
                             </ul>
                         </div>
                     </div>
@@ -203,21 +205,17 @@
                         <br>
                         <h5>কোর্সটি থেকে আপনি যা যা শিখতে পারবেন</h5>
                         <br>
-                        <details>
-                            <summary><b>See More</b></summary>
-                            <br>
-                            <ul>
-                                <li>স্কুল-কলেজ কিংবা আড্ডায়-অফিসে অনায়াসে সঠিক উচ্চারণে Japanese ভাষায় কথা বলা</li>
-                                <li>প্রাত্যহিক জীবনের বিভিন্ন পরিস্থিতিতে স্মার্টলি জাপানিজ ভাষায় কথা বলা</li>
-                                <li>জাপানিস ভাষায় কথা বলার সংকোচ ও জড়তা দ্রুত কাটিয়ে ওঠা</li>
-                                <li>এতদিন ভুল জানতেন এমন অনেক জাপানিজ শব্দের সঠিক উচ্চারণ</li>
-                                <li>জব ইন্টারভিউ, প্রেজেন্টেশন, ভাইভা, দেশি-বিদেশি ক্লায়েন্ট মিটিং, কলিগদের সাথে আলাপচারিতা, পাবলিক স্পিকিং, অপরিচিত কারো সাথে কথা শুরু করা - ইত্যাদি ক্ষেত্রে জাপানিজ ভাষায় কথা বলা</li>
-                            </ul>
-                        </details>
+                        <ul>
+                            <li>স্কুল-কলেজ কিংবা আড্ডায়-অফিসে অনায়াসে সঠিক উচ্চারণে Japanese ভাষায় কথা বলা</li>
+                            <li>প্রাত্যহিক জীবনের বিভিন্ন পরিস্থিতিতে স্মার্টলি জাপানিজ ভাষায় কথা বলা</li>
+                            <li>জাপানিস ভাষায় কথা বলার সংকোচ ও জড়তা দ্রুত কাটিয়ে ওঠা</li>
+                            <li>এতদিন ভুল জানতেন এমন অনেক জাপানিজ শব্দের সঠিক উচ্চারণ</li>
+                            <li>জব ইন্টারভিউ, প্রেজেন্টেশন, ভাইভা, দেশি-বিদেশি ক্লায়েন্ট মিটিং, কলিগদের সাথে আলাপচারিতা, পাবলিক স্পিকিং, অপরিচিত কারো সাথে কথা শুরু করা - ইত্যাদি ক্ষেত্রে জাপানিজ ভাষায় কথা বলা</li>
+                        </ul>
                         <br>
                     </div>
                 </div>
-                <button>Japanese Excellence-এর যাত্রা শুরু হোক এখনই!</button>
+                <button class="enroll_Now" onclick="showPopup()">Japanese Excellence-এর যাত্রা শুরু হোক এখনই!</button>
             </div>
          </section>
          
@@ -421,7 +419,6 @@
             <div class="container">
                 <div class="section_header">
                     <h3>দেখুন কোর্সটি থেকে শেখা স্টুডেন্টরা কি বলছে</h3>
-                    <!-- <p>Students, professionals and budding entrepreneurs drive and inspire us and make up the keeron community. Here’s what they have to say</p> -->
                 </div>
                 <br>
                 <br>
@@ -821,172 +818,7 @@
                 <br>
                 <br>
                 <div class="btn_div">
-                    <button class="btn">Show All Reviews</button>
-                </div>
-            </div>
-         </section>
-         <!-- <section class="faq">
-            <div class="container">
-                <div class="section_header">
-                    <h3>Frequently Asked Questions</h3>
-                </div>
-                <br>
-                <div class="faq_data">
-                    <div class="faq_help">
-                        <p class="ganarel_btn active" onclick="ganarelf()">Ganarel</p>
-                        <p class="payment_btn" onclick="paymentf()">Payment</p>
-                    </div>
-                    <ul id="ganarel">
-                        <li>
-                            <details>
-                                <summary><h6>এই কোর্সটি কার জন্য?g</h6></summary>
-                                <p>এই কোর্সটি তাদের জন্য, যারা পেশাগত ও ব্যক্তিগত উদ্দেশ্যে জাপানিজ উন্নত করতে আগ্রহী।</p>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary><h6>এই কোর্সটি কার জন্য?</h6></summary>
-                                <p>এই কোর্সটি তাদের জন্য, যারা পেশাগত ও ব্যক্তিগত উদ্দেশ্যে জাপানিজ উন্নত করতে আগ্রহী।</p>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary><h6>এই কোর্সটি কার জন্য?</h6></summary>
-                                <p>এই কোর্সটি তাদের জন্য, যারা পেশাগত ও ব্যক্তিগত উদ্দেশ্যে জাপানিজ উন্নত করতে আগ্রহী।</p>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary><h6>এই কোর্সটি কার জন্য?</h6></summary>
-                                <p>এই কোর্সটি তাদের জন্য, যারা পেশাগত ও ব্যক্তিগত উদ্দেশ্যে জাপানিজ উন্নত করতে আগ্রহী।</p>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary><h6>এই কোর্সটি কার জন্য?</h6></summary>
-                                <p>এই কোর্সটি তাদের জন্য, যারা পেশাগত ও ব্যক্তিগত উদ্দেশ্যে জাপানিজ উন্নত করতে আগ্রহী।</p>
-                            </details>
-                        </li>
-                    </ul>
-                    <ul id="payment">
-                        <li>
-                            <details>
-                                <summary><h6>এই কোর্সটি কার জন্য? p</h6></summary>
-                                <p>এই কোর্সটি তাদের জন্য, যারা পেশাগত ও ব্যক্তিগত উদ্দেশ্যে জাপানিজ উন্নত করতে আগ্রহী।</p>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary><h6>এই কোর্সটি কার জন্য?</h6></summary>
-                                <p>এই কোর্সটি তাদের জন্য, যারা পেশাগত ও ব্যক্তিগত উদ্দেশ্যে জাপানিজ উন্নত করতে আগ্রহী।</p>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary><h6>এই কোর্সটি কার জন্য?</h6></summary>
-                                <p>এই কোর্সটি তাদের জন্য, যারা পেশাগত ও ব্যক্তিগত উদ্দেশ্যে জাপানিজ উন্নত করতে আগ্রহী।</p>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary><h6>এই কোর্সটি কার জন্য?</h6></summary>
-                                <p>এই কোর্সটি তাদের জন্য, যারা পেশাগত ও ব্যক্তিগত উদ্দেশ্যে জাপানিজ উন্নত করতে আগ্রহী।</p>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary><h6>এই কোর্সটি কার জন্য?</h6></summary>
-                                <p>এই কোর্সটি তাদের জন্য, যারা পেশাগত ও ব্যক্তিগত উদ্দেশ্যে জাপানিজ উন্নত করতে আগ্রহী।</p>
-                            </details>
-                        </li>
-                    </ul>
-                </div>
-                <br>
-                <br>
-                <div class="btn_div">
-                    <div class="faq_mail">
-                        <h6>Couldn’t find what you were looking for?</h6>
-                        <p>Write to us at <span>hello@keeron.com</span></p>
-                    </div>
-                </div>
-            </div>
-         </section> -->
-         <section class="like_course"> 
-            <div class="container">
-                <div class="section_header">
-                    <h3>Courses you May Like</h3>
-                    <p>Learn from the best in the industry to level up your career and reach your goals</p>
-                </div>
-                <br>
-                <br>
-                <div class="courses">
-                    <ul>
-                        <li class="card">
-                            <!-- <a href="#"> -->
-                                <div class="card_img">
-                                    <img src="assets/images/Karim.jpg" alt="image">
-                                </div>
-                                <div class="card_text">
-                                    <div class="skill">
-                                        <small>Communication</small>
-                                        <small>Skill Development</small>
-                                    </div>
-                                    <p>
-                                        G M Kamrul Hassan
-                                        <b>CEO</b>
-                                        NextGen
-                                    </p>
-                                    <h5>Everyday English</h5>
-                                    <p>একটি কোর্সের মাধ্যমেই আপনার ইংরেজির দক্ষতা বাড়িয়ে ফেলুন।</p>
-                                    <br>
-                                    <div class="card_footer">
-                                        <p>4.9 ★★★★★</p>
-                                        <p>24647 Enrolled</p>
-                                    </div>
-                                    <br>
-                                    <div class="card_footer">
-                                        <h4><del>৳5000</del></h4>
-                                        <button class="btn"  onclick="showPopup()">Apply Now</button>
-                                    </div>
-                                </div>
-                            <!-- </a> -->
-                        </li>
-                        <li class="card">
-                            <!-- <a href="#"> -->
-                                <div class="card_img">
-                                    <img src="assets/images/Karim.jpg" alt="image">
-                                </div>
-                                <div class="card_text">
-                                    <div class="skill">
-                                        <small>Communication</small>
-                                        <small>Skill Development</small>
-                                    </div>
-                                    <p>
-                                        G M Kamrul Hassan
-                                        <b>CEO</b>
-                                        NextGen
-                                    </p>
-                                    <h5>Everyday English</h5>
-                                    <p>একটি কোর্সের মাধ্যমেই আপনার ইংরেজির দক্ষতা বাড়িয়ে ফেলুন।</p>
-                                    <br>
-                                    <div class="card_footer">
-                                        <p>4.9 ★★★★★</p>
-                                        <p>24647 Enrolled</p>
-                                    </div>
-                                    <br>
-                                    <div class="card_footer">
-                                        <h4><del>৳5000</del></h4>
-                                        <button class="btn"  onclick="showPopup()">Apply Now</button>
-                                    </div>
-                                </div>
-                            <!-- </a> -->
-                        </li>
-                    </ul>
-                </div>
-                <br>
-                <br>
-                <div class="btn_div">
-                    <button class="btn">Explore All Course</button>
+                    <button class="enroll_Now" onclick="showPopup()">Enroll Now</button>
                 </div>
             </div>
          </section>
@@ -1038,7 +870,7 @@
                 all_video.style.display = "none";
             }
         }
-        
+
 
         const modal = document.querySelector('.modal');
         function closePopup(){
@@ -1060,42 +892,6 @@
             }
         });
     });
-
-    document.addEventListener("DOMContentLoaded", function () {
-        const header = document.querySelector(".category"); 
-        const scrollThreshold = 500;
-
-        function handleScroll() {
-            if (window.scrollY > scrollThreshold) {
-                header.classList.add("scrolled");
-            } else {
-                header.classList.remove("scrolled");
-            }
-        }
-
-        window.addEventListener("scroll", handleScroll);
-    });
-
-
-        // const ganarel = document.getElementById("ganarel");
-        // const payment = document.getElementById("payment");
-        // const payment_btn = document.querySelector(".payment_btn")
-        // const ganarel_btn = document.querySelector(".ganarel_btn")
-        // payment.style.display = "none";
-        // ganarel.style.display = "block";
-
-        // function ganarelf() {
-        //     ganarel.style.display = "block";
-        //     payment.style.display = "none";
-        //     payment_btn.classList.remove('active');
-        //     ganarel_btn.classList.add('active');
-        // }
-        // function paymentf() {
-        //     ganarel.style.display = "none";
-        //     payment.style.display = "block";
-        //     payment_btn.classList.add('active');
-        //     ganarel_btn.classList.remove('active');
-        // }
 
             document.addEventListener("DOMContentLoaded", function () {
             const slider = document.querySelector(".slider ul");
@@ -1154,6 +950,37 @@
 
             setInterval(nextSlide, 3000);
         });
+
+
+        const countdownDate = new Date("2025-04-01T00:00:00").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const timeLeft = countdownDate - now;
+
+            if (timeLeft <= 0) {
+                document.querySelector(".timer").innerHTML = "<h5>Time's Up!</h5>";
+                clearInterval(timer);
+                return;
+            }
+
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.querySelectorAll(".timer h5")[0].innerText = days < 10 ? "0" + days : days;
+            document.querySelectorAll(".timer h5")[1].innerText = hours < 10 ? "0" + hours : hours;
+            document.querySelectorAll(".timer h5")[2].innerText = minutes < 10 ? "0" + minutes : minutes;
+            document.querySelectorAll(".timer h5")[3].innerText = seconds < 10 ? "0" + seconds : seconds;
+        }
+        const timer = setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        function closeAdd(){
+            document.querySelector(".add").style.display = 'none';
+        }
+
 
     </script>
 </body>

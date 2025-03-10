@@ -1,7 +1,10 @@
 /* add */
 .add{
-    background-color: #FFCC00;
+    /* background-color: #FFCC00; */
     padding: 10px 0;
+    background-image: url('../images/offer_bg.png');
+    background-size: cover;
+    background-position: center;
 }
 .add_text{
     justify-content: space-between;
@@ -536,3 +539,21 @@ summary{
     margin-bottom: 10px;
     border-radius: 5px;
 }
+.enroll_Now {
+    transition: background-color 0.3s ease;
+    animation: bounce 2s infinite ease-in-out;
+    
+    &:hover {
+      background-color: #e04e2c;
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
