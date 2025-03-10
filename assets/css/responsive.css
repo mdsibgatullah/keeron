@@ -41,6 +41,9 @@
     .hero .reviews{
         justify-content: center;
     }
+    section{
+        padding: 30px 0;
+    }
 }
 @media screen and (max-width: 768px){
     .course_dtl {

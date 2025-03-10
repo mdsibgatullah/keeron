@@ -81,9 +81,10 @@
                         <div class="flex teacher">
                                 <span><img src="assets/images/Elta-Karim.jpg" alt="EltaKarim"></span>
                             <div>
-                                <h5>Elita Karim</h5>
-                                <p>CELTA Certified</p>
-                                <p>Former Editor, Arts & Entertainment, The Daily Star</p>
+                                <h5>Santo Ahmed</h5>
+                                <p>JLPT Certified</p>
+                                <p>Certified Japanese language Teacher,</p>
+                                <p>Arts and Entertainment</p>
                             </div>
                         </div>
                     </div>
@@ -303,12 +304,12 @@
                                         <i><img src="assets/images/curriculmnDuration.svg" alt="images"></i> 
                                         <small>3 Videos</small>
                                     </div>
-                                    <div class="seeMore_btn">
+                                    <div class="seeMore_btn" onclick="allVideo()">
                                         <button>See More</button>
                                     </div>
                                 </div>
                             </div>
-                            <ol>
+                            <ol id="all_video">
                                 <li class="video_wrapper">
                                     <div class="free_demo flex">
                                         <div>
@@ -419,8 +420,8 @@
          <section class="saying">
             <div class="container">
                 <div class="section_header">
-                    <h3>What people are saying</h3>
-                    <p>Students, professionals and budding entrepreneurs drive and inspire us and make up the keeron community. Here’s what they have to say</p>
+                    <h3>দেখুন কোর্সটি থেকে শেখা স্টুডেন্টরা কি বলছে</h3>
+                    <!-- <p>Students, professionals and budding entrepreneurs drive and inspire us and make up the keeron community. Here’s what they have to say</p> -->
                 </div>
                 <br>
                 <br>
@@ -824,7 +825,7 @@
                 </div>
             </div>
          </section>
-         <section class="faq">
+         <!-- <section class="faq">
             <div class="container">
                 <div class="section_header">
                     <h3>Frequently Asked Questions</h3>
@@ -909,7 +910,7 @@
                     </div>
                 </div>
             </div>
-         </section>
+         </section> -->
          <section class="like_course"> 
             <div class="container">
                 <div class="section_header">
@@ -1027,6 +1028,18 @@
 
 
     <script>
+
+        const all_video = document.getElementById('all_video');
+
+        function allVideo() {
+            if (all_video.style.display === "none" || all_video.style.display === "") {
+                all_video.style.display = "block";
+            } else {
+                all_video.style.display = "none";
+            }
+        }
+        
+
         const modal = document.querySelector('.modal');
         function closePopup(){
             modal.style.display = "none";
@@ -1064,25 +1077,25 @@
     });
 
 
-        const ganarel = document.getElementById("ganarel");
-        const payment = document.getElementById("payment");
-        const payment_btn = document.querySelector(".payment_btn")
-        const ganarel_btn = document.querySelector(".ganarel_btn")
-        payment.style.display = "none";
-        ganarel.style.display = "block";
+        // const ganarel = document.getElementById("ganarel");
+        // const payment = document.getElementById("payment");
+        // const payment_btn = document.querySelector(".payment_btn")
+        // const ganarel_btn = document.querySelector(".ganarel_btn")
+        // payment.style.display = "none";
+        // ganarel.style.display = "block";
 
-        function ganarelf() {
-            ganarel.style.display = "block";
-            payment.style.display = "none";
-            payment_btn.classList.remove('active');
-            ganarel_btn.classList.add('active');
-        }
-        function paymentf() {
-            ganarel.style.display = "none";
-            payment.style.display = "block";
-            payment_btn.classList.add('active');
-            ganarel_btn.classList.remove('active');
-        }
+        // function ganarelf() {
+        //     ganarel.style.display = "block";
+        //     payment.style.display = "none";
+        //     payment_btn.classList.remove('active');
+        //     ganarel_btn.classList.add('active');
+        // }
+        // function paymentf() {
+        //     ganarel.style.display = "none";
+        //     payment.style.display = "block";
+        //     payment_btn.classList.add('active');
+        //     ganarel_btn.classList.remove('active');
+        // }
 
             document.addEventListener("DOMContentLoaded", function () {
             const slider = document.querySelector(".slider ul");

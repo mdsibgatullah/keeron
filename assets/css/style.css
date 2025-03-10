@@ -259,6 +259,9 @@ summary{
 .free_demo{
     justify-content: space-between;
 }
+#all_video{
+    display: none;
+}
 .course_video{
     margin: 20px 0;
     text-align: end;
