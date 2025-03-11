@@ -205,7 +205,12 @@ summary{
     text-align: center;
     padding: 20px 0;
 }
-
+.course_curriculum .section_header h5{
+    box-shadow: 0 0 8px #ff8f8f inset;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
 .course_curriculum small{
     font-size: 14px;
     font-weight: bold;
@@ -296,15 +301,15 @@ summary{
 .mentor_details h3{
     text-align: center;
 }
-.mentor_data .mentor_img{
-    width: 300px;
-    max-height: 400px;
+.mentor_img{
+    max-width: 600px;
+    margin: 0 auto;
     border-radius: 10px;
     overflow: hidden;
 }
-.mentor_data .mentor_img img{
+.mentor_img img{
     object-fit: cover;
-    height: 100%;
+    border-radius: 10px;
 }
 .daily_star_logo img{
     width: 70px;
